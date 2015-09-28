@@ -10,9 +10,37 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)roundSuivant:(UIButton *)sender;
+- (IBAction)nouveauMatch:(UIButton *)sender;
 
-- (IBAction)commencer:(UIButton *)sender;
+- (IBAction)Commencer:(UIButton *)sender;
+
+- (IBAction)continuer:(UIButton *)sender;
+//faute
+
+- (IBAction)fauteCommiseParBoxeurBleu:(UIButton *)sender;
+
+- (IBAction)fauteCommiseParBoxeurRouge:(UIButton *)sender;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *boxeurRouge;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *boxeurbleu;
+
+@property (weak, nonatomic) IBOutlet UILabel *round;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *j1label;
+@property (weak, nonatomic) IBOutlet UILabel *j2label;
+@property (weak, nonatomic) IBOutlet UILabel *j3label;
+
+@property (weak, nonatomic) IBOutlet UITextField *j1textfield;
+
+@property (weak, nonatomic) IBOutlet UITextField *j2textfield;
+
+@property (weak, nonatomic) IBOutlet UITextField *j3textfield;
+
+
 
 
 
@@ -177,6 +205,34 @@
 @property (weak, nonatomic) IBOutlet UILabel *j3r12;
 
 @property (weak, nonatomic) IBOutlet UILabel *j3rcumul;
+
+//points pour le ronde actuelle
+
+@property (weak, nonatomic) IBOutlet UITextField *JBJ1RA;
+
+@property (weak, nonatomic) IBOutlet UITextField *JBJ2RA;
+
+@property (weak, nonatomic) IBOutlet UITextField *JBJ3RA;
+
+@property (weak, nonatomic) IBOutlet UITextField *JRJ1RA;
+
+@property (weak, nonatomic) IBOutlet UITextField *JRJ2RA;
+
+@property (weak, nonatomic) IBOutlet UITextField *JRJ3RA;
+
+// noms des juges pour le pointage du ronde actuel.
+
+@property (weak, nonatomic) IBOutlet UILabel *J1RA;
+
+@property (weak, nonatomic) IBOutlet UILabel *J2RA;
+
+@property (weak, nonatomic) IBOutlet UILabel *J3RA;
+
+
+//numero de ronde actuel
+
+@property (weak, nonatomic) IBOutlet UILabel *labelNumRoundActuel;
+
 
 
 
