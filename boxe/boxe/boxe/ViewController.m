@@ -175,8 +175,12 @@ int pointsDeduitsBoxeurRouge;
     pointsDeduitsBoxeurRouge = 0;
     pointsDeduitsBoxeurBleu = 0;
     
-    
-    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Nouvelle Partie de boxe"
+                                                   message:[[NSString alloc]initWithFormat:@"Saisissez les noms des juges sur les colonnes de points, et les noms des boxeur dans les champs sous les coins bleu et rouge \n%@", @" ;"]
+                                                  delegate:nil
+                                         cancelButtonTitle:@"Fermer"
+                                         otherButtonTitles:nil];
+    [alert show];
     
 }
 
@@ -221,6 +225,25 @@ int pointsDeduitsBoxeurRouge;
 - (IBAction)continuer:(UIButton *)sender {
     
     //mise a jour de résultats
+  
+    
+    if(([_JRJ1RA.text integerValue] < 10 && [_JBJ1RA.text integerValue] < 10)||([_JRJ2RA.text integerValue] < 10 && [_JBJ2RA.text integerValue] < 10)||([_JRJ3RA.text integerValue] < 10 && [_JBJ3RA.text integerValue] < 10))
+    {
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Erreur"
+                                                   message:[[NSString alloc]initWithFormat:@"Au mois un boxeur doit avoir 10 points  \n%@", @" ;"]
+                                                  delegate:nil
+                                         cancelButtonTitle:@"Fermer"
+                                         otherButtonTitles:nil];
+    [alert show];
+    
+    
+    }
+    
+    else
+        
+    {
+    
     
     switch (numRound)
     
@@ -708,6 +731,23 @@ int pointsDeduitsBoxeurRouge;
         
     {
         
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Fin Partie de boxe"
+                                                       message:[[NSString alloc]initWithFormat:@"SVoir le résultat et le type de décision  \n%@", @" ;"]
+                                                      delegate:nil
+                                             cancelButtonTitle:@"Fermer"
+                                             otherButtonTitles:nil];
+        [alert show];
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         if ([j1rcumulv integerValue]+ [j2rcumulv integerValue] + [j3rcumulv integerValue] < [j1bcumulv integerValue]+ [j2bcumulv integerValue] + [j3bcumulv integerValue])
         {
             
@@ -736,7 +776,7 @@ int pointsDeduitsBoxeurRouge;
     }
 
     
-    
+    }
     
     
     
@@ -755,7 +795,12 @@ int pointsDeduitsBoxeurRouge;
     
 }
 - (IBAction)koDuRouge:(UIButton *)sender {
-    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Fin Partie de boxe"
+                                                   message:[[NSString alloc]initWithFormat:@"SVoir le résultat et le type de décision  \n%@", @" ;"]
+                                                  delegate:nil
+                                         cancelButtonTitle:@"Fermer"
+                                         otherButtonTitles:nil];
+    [alert show];
     _gagnantMatch.text = @"Boxeur Bleu";
     _typeDecision.text = @"K.O";
     
@@ -764,7 +809,12 @@ int pointsDeduitsBoxeurRouge;
 }
 
 - (IBAction)koDuBleu:(UIButton *)sender {
-    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Fin Partie de boxe"
+                                                   message:[[NSString alloc]initWithFormat:@"SVoir le résultat et le type de décision  \n%@", @" ;"]
+                                                  delegate:nil
+                                         cancelButtonTitle:@"Fermer"
+                                         otherButtonTitles:nil];
+    [alert show];
     _gagnantMatch.text = @"Boxeur Rouge";
     _typeDecision.text = @"K.O";
     
@@ -772,7 +822,12 @@ int pointsDeduitsBoxeurRouge;
 }
 
 - (IBAction)dqDuBleu:(UIButton *)sender {
-    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Fin Partie de boxe"
+                                                   message:[[NSString alloc]initWithFormat:@"SVoir le résultat et le type de décision  \n%@", @" ;"]
+                                                  delegate:nil
+                                         cancelButtonTitle:@"Fermer"
+                                         otherButtonTitles:nil];
+    [alert show];
     _gagnantMatch.text = @"Boxeur Rouge";
     _typeDecision.text = @"Disqualification";
     
@@ -780,10 +835,95 @@ int pointsDeduitsBoxeurRouge;
 }
 
 - (IBAction)dqDuRouge:(UIButton *)sender {
-    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Fin Partie de boxe"
+                                                   message:[[NSString alloc]initWithFormat:@"SVoir le résultat et le type de décision  \n%@", @" ;"]
+                                                  delegate:nil
+                                         cancelButtonTitle:@"Fermer"
+                                         otherButtonTitles:nil];
+    [alert show];
     _gagnantMatch.text = @"Boxeur Bleu";
     _typeDecision.text = @"Disqualification";
     
+    
+    
+    
+}
+
+- (IBAction)modifPointsJ1BoxRouge:(UIButton *)sender {
+    
+    if([_JRJ1RA.text integerValue]>6)
+      _JRJ1RA.text = [NSString stringWithFormat:@"%ld" ,[_JRJ1RA.text integerValue] - 1];
+    
+    
+}
+
+- (IBAction)modifPointsJ2BoxRouge:(UIButton *)sender {
+    if([_JRJ2RA.text integerValue]>6)
+       _JRJ2RA.text = [NSString stringWithFormat:@"%ld" ,[_JRJ2RA.text integerValue] - 1];
+}
+
+- (IBAction)modifPointsJ3BoxRouge:(UIButton *)sender {
+    if([_JRJ3RA.text integerValue]>6)
+       _JRJ3RA.text = [NSString stringWithFormat:@"%ld" ,[_JRJ3RA.text integerValue] - 1];
+}
+
+- (IBAction)modifPointsJ1BoxBleu:(UIButton *)sender {
+    if([_JBJ1RA.text integerValue]>6)
+        _JBJ1RA.text = [NSString stringWithFormat:@"%ld" ,[_JBJ1RA.text integerValue] - 1];
+}
+
+- (IBAction)modifPointsJ2BoxBleu:(UIButton *)sender {
+    
+    if([_JBJ2RA.text integerValue]>6)
+        _JBJ2RA.text = [NSString stringWithFormat:@"%ld" ,[_JBJ2RA.text integerValue] - 1];
+}
+
+- (IBAction)modifPointsJ3BoxBleu:(UIButton *)sender {
+    if([_JBJ3RA.text integerValue]>6)
+        _JBJ3RA.text = [NSString stringWithFormat:@"%ld" ,[_JBJ3RA.text integerValue] - 1];
+}
+
+- (IBAction)AugmenterPonitsJ1BoxBleu:(UIButton *)sender {
+    
+    if([_JBJ1RA.text integerValue]<10)
+        _JBJ1RA.text = [NSString stringWithFormat:@"%ld" ,[_JBJ1RA.text integerValue] + 1];
+    
+    
+    
+}
+
+- (IBAction)AugmenterPonitsJ2BoxBleu:(UIButton *)sender {
+    
+    if([_JBJ2RA.text integerValue]<10)
+        _JBJ2RA.text = [NSString stringWithFormat:@"%ld" ,[_JBJ2RA.text integerValue] + 1];
+}
+
+- (IBAction)AugmenterPonitsJ3BoxBleu:(UIButton *)sender {
+    
+    if([_JBJ3RA.text integerValue]<10)
+        _JBJ3RA.text = [NSString stringWithFormat:@"%ld" ,[_JBJ3RA.text integerValue] + 1];
+    
+    
+    
+}
+
+- (IBAction)AugmenterPonitsJ1BoxRouge:(UIButton *)sender {
+    
+    if([_JRJ1RA.text integerValue]<10)
+        _JRJ1RA.text = [NSString stringWithFormat:@"%ld" ,[_JRJ1RA.text integerValue] + 1];
+}
+
+- (IBAction)AugmenterPonitsJ2BoxRouge:(UIButton *)sender {
+    
+    
+    if([_JRJ2RA.text integerValue]<10)
+        _JRJ2RA.text = [NSString stringWithFormat:@"%ld" ,[_JRJ2RA.text integerValue] + 1];
+}
+
+- (IBAction)AugmenterPonitsJ3BoxRouge:(UIButton *)sender {
+    
+    if([_JRJ3RA.text integerValue] < 10)
+        _JRJ3RA.text = [NSString stringWithFormat:@"%ld" ,[_JRJ3RA.text integerValue] + 1];
     
     
     

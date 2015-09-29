@@ -251,6 +251,24 @@
 
 - (IBAction)dqDuRouge:(UIButton *)sender;
 
+- (IBAction)modifPointsJ1BoxRouge:(UIButton *)sender;
+- (IBAction)modifPointsJ2BoxRouge:(UIButton *)sender;
+- (IBAction)modifPointsJ3BoxRouge:(UIButton *)sender;
+
+- (IBAction)modifPointsJ1BoxBleu:(UIButton *)sender;
+
+- (IBAction)modifPointsJ2BoxBleu:(UIButton *)sender;
+
+- (IBAction)modifPointsJ3BoxBleu:(UIButton *)sender;
+
+- (IBAction)AugmenterPonitsJ1BoxBleu:(UIButton *)sender;
+- (IBAction)AugmenterPonitsJ2BoxBleu:(UIButton *)sender;
+- (IBAction)AugmenterPonitsJ3BoxBleu:(UIButton *)sender;
+
+- (IBAction)AugmenterPonitsJ1BoxRouge:(UIButton *)sender;
+- (IBAction)AugmenterPonitsJ2BoxRouge:(UIButton *)sender;
+- (IBAction)AugmenterPonitsJ3BoxRouge:(UIButton *)sender;
+
 
 
 @end
