@@ -73,6 +73,10 @@ int pointsDeduitsBoxeurRouge;
     _boxeurbleu.text = @"entrez un nom";
     _boxeurRouge.text = @"entrez un nom";
 
+    _typeDecision.text = @"";
+    _gagnantMatch.text = @"";
+    
+    
     
     numRound = 0;
     
@@ -484,7 +488,7 @@ int pointsDeduitsBoxeurRouge;
     NSString *j1b10v = self.j1b10.text;
     NSString *j1b11v = self.j1b11.text;
     NSString *j1b12v = self.j1b12.text;
-    //NSString *j1bcumulv = self.j1bcumul.text;
+    
     
     self.j1bcumul.text = [NSString stringWithFormat:@"%ld" ,
                           
@@ -503,7 +507,7 @@ int pointsDeduitsBoxeurRouge;
                           
                           ];
     
-    
+    NSString *j1bcumulv = self.j1bcumul.text;
     
     // juge 1 et boxeur rouge
     
@@ -519,7 +523,7 @@ int pointsDeduitsBoxeurRouge;
     NSString *j1r10v = self.j1r10.text;
     NSString *j1r11v = self.j1r11.text;
     NSString *j1r12v = self.j1r12.text;
-    // NSString *j1rcumulv = self.j1rcumul.text;
+    
     
     self.j1rcumul.text = [NSString stringWithFormat:@"%ld" ,
                           
@@ -537,7 +541,7 @@ int pointsDeduitsBoxeurRouge;
                           [j1r12v integerValue]
                           
                           ];
-    
+     NSString *j1rcumulv = self.j1rcumul.text;
     
     // juge 2 et boxeur bleu
     
@@ -553,7 +557,7 @@ int pointsDeduitsBoxeurRouge;
     NSString *j2b10v = self.j2b10.text;
     NSString *j2b11v = self.j2b11.text;
     NSString *j2b12v = self.j2b12.text;
-    // NSString *j2bcumulv = self.j2bcumul.text;
+    //
     
     self.j2bcumul.text = [NSString stringWithFormat:@"%ld" ,
                           
@@ -572,7 +576,7 @@ int pointsDeduitsBoxeurRouge;
                           
                           ];
     
-    
+    NSString *j2bcumulv = self.j2bcumul.text;
     // juge 2 et boxeur rouge
     
     NSString *j2r1v = self.j2r1.text;
@@ -587,7 +591,7 @@ int pointsDeduitsBoxeurRouge;
     NSString *j2r10v = self.j2r10.text;
     NSString *j2r11v = self.j2r11.text;
     NSString *j2r12v = self.j2r12.text;
-    // NSString *j2rcumulv = self.j2rcumul.text;
+    //
     
     self.j2rcumul.text = [NSString stringWithFormat:@"%ld" ,
                           
@@ -607,7 +611,7 @@ int pointsDeduitsBoxeurRouge;
                           ];
     
     
-    
+    NSString *j2rcumulv = self.j2rcumul.text;
     
     // juge 3 et boxeur bleu
     
@@ -623,7 +627,7 @@ int pointsDeduitsBoxeurRouge;
     NSString *j3b10v = self.j3b10.text;
     NSString *j3b11v = self.j3b11.text;
     NSString *j3b12v = self.j3b12.text;
-    // NSString *j3bcumulv = self.j3bcumul.text;
+    //
     
     self.j3bcumul.text = [NSString stringWithFormat:@"%ld" ,
                           
@@ -642,7 +646,7 @@ int pointsDeduitsBoxeurRouge;
                           
                           ];
     
-    
+    NSString *j3bcumulv = self.j3bcumul.text;
     // juge 3 et boxeur rouge
     
     NSString *j3r1v = self.j3r1.text;
@@ -657,7 +661,7 @@ int pointsDeduitsBoxeurRouge;
     NSString *j3r10v = self.j3r10.text;
     NSString *j3r11v = self.j3r11.text;
     NSString *j3r12v = self.j3r12.text;
-    // NSString *j3rcumulv = self.j3rcumul.text;
+    //
     
     self.j3rcumul.text = [NSString stringWithFormat:@"%ld" ,
                           
@@ -676,6 +680,13 @@ int pointsDeduitsBoxeurRouge;
                           
                           ];
     
+    NSString *j3rcumulv = self.j3rcumul.text;
+    
+    
+    
+    if(numRound <12) {
+        
+       
     
     
     
@@ -691,6 +702,44 @@ int pointsDeduitsBoxeurRouge;
     _JRJ2RA.text = @"10";
     _JRJ3RA.text = @"10";
     
+    }
+    
+    else
+        
+    {
+        
+        if ([j1rcumulv integerValue]+ [j2rcumulv integerValue] + [j3rcumulv integerValue] < [j1bcumulv integerValue]+ [j2bcumulv integerValue] + [j3bcumulv integerValue])
+        {
+            
+            _gagnantMatch.text = @"Boxeur Bleu";
+            _typeDecision.text = @"par points" ;
+            
+        }
+        
+        if ([j1rcumulv integerValue]+ [j2rcumulv integerValue] + [j3rcumulv integerValue] > [j1bcumulv integerValue]+ [j2bcumulv integerValue] + [j3bcumulv integerValue])
+        {
+            
+            _gagnantMatch.text = @"Boxeur rouge";
+            _typeDecision.text = @"par points" ;
+            
+        }
+        
+        if ([j1rcumulv integerValue]+ [j2rcumulv integerValue] + [j3rcumulv integerValue] == [j1bcumulv integerValue]+ [j2bcumulv integerValue] + [j3bcumulv integerValue])
+        {
+            
+            _gagnantMatch.text = @"Aucun";
+            _typeDecision.text = @"par points" ;
+            
+        }
+        
+        
+    }
+
+    
+    
+    
+    
+    
     
 }
 
@@ -703,6 +752,40 @@ int pointsDeduitsBoxeurRouge;
 - (IBAction)fauteCommiseParBoxeurRouge:(UIButton *)sender {
     
     pointsDeduitsBoxeurRouge += 1;
+    
+}
+- (IBAction)koDuRouge:(UIButton *)sender {
+    
+    _gagnantMatch.text = @"Boxeur Bleu";
+    _typeDecision.text = @"K.O";
+    
+    
+    
+}
+
+- (IBAction)koDuBleu:(UIButton *)sender {
+    
+    _gagnantMatch.text = @"Boxeur Rouge";
+    _typeDecision.text = @"K.O";
+    
+    
+}
+
+- (IBAction)dqDuBleu:(UIButton *)sender {
+    
+    _gagnantMatch.text = @"Boxeur Rouge";
+    _typeDecision.text = @"Disqualification";
+    
+    
+}
+
+- (IBAction)dqDuRouge:(UIButton *)sender {
+    
+    _gagnantMatch.text = @"Boxeur Bleu";
+    _typeDecision.text = @"Disqualification";
+    
+    
+    
     
 }
 @end

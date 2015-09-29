@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>01C47DB9-B10A-4F48-A965-66E07363C55E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>boxe</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>2B6ABEE6FD80BDD5BBDC5F59A9191CB136086A7B</key>
 		<string>https://github.com/taibi/LAB1_GTI350.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>boxe/boxe/boxe.xcodeproj/project.xcworkspace</string>
+	<string>boxe/boxe/boxe.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2B6ABEE6FD80BDD5BBDC5F59A9191CB136086A7B</key>

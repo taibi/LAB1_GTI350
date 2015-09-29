@@ -233,6 +233,23 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *labelNumRoundActuel;
 
+//resultat du match
+
+@property (weak, nonatomic) IBOutlet UILabel *gagnantMatch;
+
+@property (weak, nonatomic) IBOutlet UILabel *typeDecision;
+
+
+// ko
+
+- (IBAction)koDuRouge:(UIButton *)sender;
+
+
+- (IBAction)koDuBleu:(UIButton *)sender;
+
+- (IBAction)dqDuBleu:(UIButton *)sender;
+
+- (IBAction)dqDuRouge:(UIButton *)sender;
 
 
 

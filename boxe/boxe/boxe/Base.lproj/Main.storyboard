@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeT-lX-taN">
-                                <rect key="frame" x="487" y="492" width="106" height="29"/>
+                                <rect key="frame" x="487" y="509" width="106" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xC-QD-Wjt">
-                                <rect key="frame" x="487" y="412" width="106" height="30"/>
+                                <rect key="frame" x="487" y="399" width="106" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
@@ -57,9 +57,12 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="koDuRouge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3WD-vc-Dg0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC8-Vy-rNz">
-                                <rect key="frame" x="16" y="412" width="106" height="29"/>
+                                <rect key="frame" x="6" y="399" width="106" height="29"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
@@ -67,24 +70,27 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="koDuBleu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwc-os-rY1"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="entrez un nom" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JLj-cf-vOz">
-                                <rect key="frame" x="141" y="26" width="96" height="30"/>
+                                <rect key="frame" x="125" y="22" width="96" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="entrez un nom" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQ3-Ir-aEj">
-                                <rect key="frame" x="246" y="26" width="105" height="30"/>
+                                <rect key="frame" x="230" y="22" width="105" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="entrez un nom" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-qj-mWf">
-                                <rect key="frame" x="359" y="26" width="101" height="30"/>
+                                <rect key="frame" x="343" y="22" width="101" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-Yq-oTd">
-                                <rect key="frame" x="148" y="58" width="40" height="257"/>
+                                <rect key="frame" x="132" y="54" width="40" height="257"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="0qs-vq-C2A">
                                         <rect key="frame" x="0.0" y="232" width="40" height="2"/>
@@ -177,40 +183,40 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="lF1-Aj-db2">
-                                <rect key="frame" x="148" y="77" width="40" height="2"/>
+                                <rect key="frame" x="132" y="73" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ywb-R9-VE6">
-                                <rect key="frame" x="148" y="96" width="40" height="2"/>
+                                <rect key="frame" x="132" y="92" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="BJX-XD-e4Q">
-                                <rect key="frame" x="148" y="116" width="40" height="2"/>
+                                <rect key="frame" x="132" y="112" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gek-7j-J6d">
-                                <rect key="frame" x="148" y="135" width="40" height="2"/>
+                                <rect key="frame" x="132" y="131" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-6E-WuL">
-                                <rect key="frame" x="148" y="154" width="40" height="2"/>
+                                <rect key="frame" x="132" y="150" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Fh-SV-2VH">
-                                <rect key="frame" x="148" y="174" width="40" height="2"/>
+                                <rect key="frame" x="132" y="170" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ifQ-qx-VA1">
-                                <rect key="frame" x="148" y="253" width="40" height="2"/>
+                                <rect key="frame" x="132" y="249" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="4Z2-Nv-q70">
-                                <rect key="frame" x="148" y="272" width="40" height="2"/>
+                                <rect key="frame" x="132" y="268" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="0qm-ck-2Br">
-                                <rect key="frame" x="148" y="193" width="40" height="2"/>
+                                <rect key="frame" x="132" y="189" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ory-mv-hqm">
-                                <rect key="frame" x="148" y="212" width="40" height="2"/>
+                                <rect key="frame" x="132" y="208" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="h8W-ED-8Ye">
-                                <rect key="frame" x="148" y="232" width="40" height="2"/>
+                                <rect key="frame" x="132" y="228" width="40" height="2"/>
                             </progressView>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9f-S6-aHM">
-                                <rect key="frame" x="191" y="58" width="40" height="257"/>
+                                <rect key="frame" x="175" y="54" width="40" height="257"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fmp-SS-H7k">
                                         <rect key="frame" x="0.0" y="232" width="40" height="2"/>
@@ -308,76 +314,76 @@
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="f0M-mA-zaL">
-                                <rect key="frame" x="191" y="77" width="40" height="2"/>
+                                <rect key="frame" x="175" y="73" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="AK3-wn-t6S">
-                                <rect key="frame" x="191" y="96" width="40" height="2"/>
+                                <rect key="frame" x="175" y="92" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="4gu-6u-pPH">
-                                <rect key="frame" x="191" y="116" width="40" height="2"/>
+                                <rect key="frame" x="175" y="112" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="qgO-O6-PrT">
-                                <rect key="frame" x="191" y="135" width="40" height="2"/>
+                                <rect key="frame" x="175" y="131" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="dfK-69-Ovj">
-                                <rect key="frame" x="191" y="154" width="40" height="2"/>
+                                <rect key="frame" x="175" y="150" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZD2-YA-Qwn">
-                                <rect key="frame" x="191" y="174" width="40" height="2"/>
+                                <rect key="frame" x="175" y="170" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="USw-nA-85H">
-                                <rect key="frame" x="191" y="253" width="40" height="2"/>
+                                <rect key="frame" x="175" y="249" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="qNe-2G-PHQ">
-                                <rect key="frame" x="191" y="272" width="40" height="2"/>
+                                <rect key="frame" x="175" y="268" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="wpE-2D-qef">
-                                <rect key="frame" x="191" y="193" width="40" height="2"/>
+                                <rect key="frame" x="175" y="189" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="QjG-cE-Fsn">
-                                <rect key="frame" x="191" y="212" width="40" height="2"/>
+                                <rect key="frame" x="175" y="208" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="2tE-y6-dpR">
-                                <rect key="frame" x="191" y="232" width="40" height="2"/>
+                                <rect key="frame" x="175" y="228" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nom du Juge 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaw-ME-Gm5">
-                                <rect key="frame" x="145" y="10" width="93" height="21"/>
+                                <rect key="frame" x="129" y="6" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nom du Juge 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-Iy-wB6">
-                                <rect key="frame" x="367" y="10" width="93" height="21"/>
+                                <rect key="frame" x="351" y="6" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nom du Juge 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q85-Q5-7Re">
-                                <rect key="frame" x="257" y="10" width="93" height="21"/>
+                                <rect key="frame" x="241" y="6" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TR-J1-JEL">
-                                <rect key="frame" x="487" y="208" width="106" height="30"/>
+                                <rect key="frame" x="6" y="277" width="106" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Fin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RU6-Pm-shK">
-                                <rect key="frame" x="257" y="58" width="40" height="257"/>
+                                <rect key="frame" x="241" y="54" width="40" height="257"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fak-xA-hgo">
                                         <rect key="frame" x="0.0" y="232" width="40" height="2"/>
@@ -470,40 +476,40 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="3yX-Dm-s4q">
-                                <rect key="frame" x="257" y="77" width="40" height="2"/>
+                                <rect key="frame" x="241" y="73" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="7ap-AL-G1U">
-                                <rect key="frame" x="257" y="96" width="40" height="2"/>
+                                <rect key="frame" x="241" y="92" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Acb-Jf-2Jf">
-                                <rect key="frame" x="257" y="116" width="40" height="2"/>
+                                <rect key="frame" x="241" y="112" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="v9l-4h-Dl0">
-                                <rect key="frame" x="257" y="135" width="40" height="2"/>
+                                <rect key="frame" x="241" y="131" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="QkM-0b-fUP">
-                                <rect key="frame" x="257" y="154" width="40" height="2"/>
+                                <rect key="frame" x="241" y="150" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="nQL-QM-Fpb">
-                                <rect key="frame" x="257" y="174" width="40" height="2"/>
+                                <rect key="frame" x="241" y="170" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="22S-2L-Rcn">
-                                <rect key="frame" x="257" y="253" width="40" height="2"/>
+                                <rect key="frame" x="241" y="249" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-nk-HPG">
-                                <rect key="frame" x="257" y="272" width="40" height="2"/>
+                                <rect key="frame" x="241" y="268" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="mNs-UJ-e2p">
-                                <rect key="frame" x="257" y="193" width="40" height="2"/>
+                                <rect key="frame" x="241" y="189" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ott-rl-k4I">
-                                <rect key="frame" x="257" y="212" width="40" height="2"/>
+                                <rect key="frame" x="241" y="208" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="JHj-5R-O7J">
-                                <rect key="frame" x="257" y="232" width="40" height="2"/>
+                                <rect key="frame" x="241" y="228" width="40" height="2"/>
                             </progressView>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dmc-9h-3Wr">
-                                <rect key="frame" x="300" y="58" width="40" height="257"/>
+                                <rect key="frame" x="284" y="54" width="40" height="257"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="5ue-Dv-HDk">
                                         <rect key="frame" x="0.0" y="232" width="40" height="2"/>
@@ -601,51 +607,51 @@
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-FJ-50k">
-                                <rect key="frame" x="300" y="77" width="40" height="2"/>
+                                <rect key="frame" x="284" y="73" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pzq-xk-ltv">
-                                <rect key="frame" x="300" y="96" width="40" height="2"/>
+                                <rect key="frame" x="284" y="92" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-Gx-zxc">
-                                <rect key="frame" x="300" y="116" width="40" height="2"/>
+                                <rect key="frame" x="284" y="112" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="QvN-pE-Yih">
-                                <rect key="frame" x="300" y="135" width="40" height="2"/>
+                                <rect key="frame" x="284" y="131" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="G5t-td-aRb">
-                                <rect key="frame" x="300" y="154" width="40" height="2"/>
+                                <rect key="frame" x="284" y="150" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="67h-Rr-wAb">
-                                <rect key="frame" x="300" y="174" width="40" height="2"/>
+                                <rect key="frame" x="284" y="170" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="2WF-JM-ToO">
-                                <rect key="frame" x="300" y="253" width="40" height="2"/>
+                                <rect key="frame" x="284" y="249" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="sW3-q6-Leh">
-                                <rect key="frame" x="300" y="272" width="40" height="2"/>
+                                <rect key="frame" x="284" y="268" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-DB-fl5">
-                                <rect key="frame" x="300" y="193" width="40" height="2"/>
+                                <rect key="frame" x="284" y="189" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="x6L-v0-qGc">
-                                <rect key="frame" x="300" y="212" width="40" height="2"/>
+                                <rect key="frame" x="284" y="208" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dhg-RI-NOu">
-                                <rect key="frame" x="300" y="232" width="40" height="2"/>
+                                <rect key="frame" x="284" y="228" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFR-tK-U2i">
-                                <rect key="frame" x="371" y="58" width="40" height="257"/>
+                                <rect key="frame" x="355" y="54" width="40" height="257"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="klu-GQ-nmk">
                                         <rect key="frame" x="0.0" y="232" width="40" height="2"/>
@@ -738,40 +744,40 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="v5G-GP-Vir">
-                                <rect key="frame" x="371" y="77" width="40" height="2"/>
+                                <rect key="frame" x="355" y="73" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="hmP-l9-Bbj">
-                                <rect key="frame" x="371" y="96" width="40" height="2"/>
+                                <rect key="frame" x="355" y="92" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="1ov-di-rQl">
-                                <rect key="frame" x="371" y="116" width="40" height="2"/>
+                                <rect key="frame" x="355" y="112" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Hjv-DQ-vLH">
-                                <rect key="frame" x="371" y="135" width="40" height="2"/>
+                                <rect key="frame" x="355" y="131" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="pPD-8s-OqX">
-                                <rect key="frame" x="371" y="154" width="40" height="2"/>
+                                <rect key="frame" x="355" y="150" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="XM2-Lt-B0w">
-                                <rect key="frame" x="371" y="174" width="40" height="2"/>
+                                <rect key="frame" x="355" y="170" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="pNo-NU-yYb">
-                                <rect key="frame" x="371" y="253" width="40" height="2"/>
+                                <rect key="frame" x="355" y="249" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="zpY-lZ-Axe">
-                                <rect key="frame" x="371" y="272" width="40" height="2"/>
+                                <rect key="frame" x="355" y="268" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-zF-1gC">
-                                <rect key="frame" x="371" y="193" width="40" height="2"/>
+                                <rect key="frame" x="355" y="189" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="mlo-Vh-Erv">
-                                <rect key="frame" x="371" y="212" width="40" height="2"/>
+                                <rect key="frame" x="355" y="208" width="40" height="2"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ABB-Rh-ZqC">
-                                <rect key="frame" x="371" y="232" width="40" height="2"/>
+                                <rect key="frame" x="355" y="228" width="40" height="2"/>
                             </progressView>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="560-xh-363">
-                                <rect key="frame" x="414" y="58" width="40" height="257"/>
+                                <rect key="frame" x="398" y="54" width="40" height="257"/>
                                 <subviews>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="u4E-ZM-mzU">
                                         <rect key="frame" x="0.0" y="232" width="40" height="2"/>
@@ -869,51 +875,51 @@
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Yq2-Th-hCk">
-                                <rect key="frame" x="414" y="77" width="40" height="2"/>
+                                <rect key="frame" x="398" y="73" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="NnO-vD-Gh6">
-                                <rect key="frame" x="414" y="96" width="40" height="2"/>
+                                <rect key="frame" x="398" y="92" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="vkS-fh-Cbp">
-                                <rect key="frame" x="414" y="116" width="40" height="2"/>
+                                <rect key="frame" x="398" y="112" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="pMc-ye-Ite">
-                                <rect key="frame" x="414" y="135" width="40" height="2"/>
+                                <rect key="frame" x="398" y="131" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="P6L-px-uYX">
-                                <rect key="frame" x="414" y="154" width="40" height="2"/>
+                                <rect key="frame" x="398" y="150" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ggs-Wh-XVp">
-                                <rect key="frame" x="414" y="174" width="40" height="2"/>
+                                <rect key="frame" x="398" y="170" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="LmD-FQ-1lS">
-                                <rect key="frame" x="414" y="253" width="40" height="2"/>
+                                <rect key="frame" x="398" y="249" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="nNG-EY-B2K">
-                                <rect key="frame" x="414" y="272" width="40" height="2"/>
+                                <rect key="frame" x="398" y="268" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="JAg-MR-eMT">
-                                <rect key="frame" x="414" y="193" width="40" height="2"/>
+                                <rect key="frame" x="398" y="189" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZJT-kd-Hvj">
-                                <rect key="frame" x="414" y="212" width="40" height="2"/>
+                                <rect key="frame" x="398" y="208" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="eKi-zj-CSY">
-                                <rect key="frame" x="414" y="232" width="40" height="2"/>
+                                <rect key="frame" x="398" y="228" width="40" height="2"/>
                                 <color key="tintColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6a-Fs-SRf">
-                                <rect key="frame" x="16" y="492" width="106" height="27"/>
+                                <rect key="frame" x="6" y="509" width="106" height="27"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
@@ -926,7 +932,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHw-JL-bdY">
-                                <rect key="frame" x="6" y="73" width="116" height="29"/>
+                                <rect key="frame" x="6" y="6" width="116" height="29"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Nouveau match">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -936,7 +942,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuS-ja-Kms">
-                                <rect key="frame" x="8" y="208" width="116" height="30"/>
+                                <rect key="frame" x="6" y="49" width="116" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Commencer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -946,7 +952,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC3-nK-36g">
-                                <rect key="frame" x="482" y="72" width="111" height="30"/>
+                                <rect key="frame" x="245" y="344" width="111" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Continuer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1003,19 +1009,19 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Juge 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTY-7n-H4z">
                                         <rect key="frame" x="95" y="12" width="114" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Juge 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOE-3h-dz2">
                                         <rect key="frame" x="95" y="44" width="114" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Juge 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qU-hD-YmX">
                                         <rect key="frame" x="95" y="79" width="114" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1040,6 +1046,60 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R16-4x-Ogx">
+                                <rect key="frame" x="446" y="40" width="126" height="271"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Le gagnant :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxF-ih-mwZ">
+                                        <rect key="frame" x="8" y="63" width="96" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yU-SQ-xnU">
+                                        <rect key="frame" x="8" y="101" width="115" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type décision :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRN-ls-T1M">
+                                        <rect key="frame" x="8" y="147" width="115" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-Mq-fCV">
+                                        <rect key="frame" x="8" y="189" width="110" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXi-iH-aai">
+                                <rect key="frame" x="6" y="445" width="106" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="DQ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dqDuBleu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7c-UC-Drj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-ff-SM7">
+                                <rect key="frame" x="487" y="445" width="106" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.2081278681" blue="0.17104796089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="DQ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dqDuRouge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k0K-mr-uWn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803926" green="0.95058099712046384" blue="0.67930887905307447" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -1057,6 +1117,7 @@
                         <outlet property="JRJ3RA" destination="NdV-wA-Prl" id="ijB-X0-Gj8"/>
                         <outlet property="boxeurRouge" destination="y0E-mj-x5z" id="PCq-Qz-706"/>
                         <outlet property="boxeurbleu" destination="5YH-Lv-fvh" id="UWA-EI-S3z"/>
+                        <outlet property="gagnantMatch" destination="8yU-SQ-xnU" id="i4c-us-eq2"/>
                         <outlet property="j1b1" destination="Rt7-tM-q9K" id="g9Z-aR-rcf"/>
                         <outlet property="j1b10" destination="WZN-5F-PC3" id="xvH-vP-RHA"/>
                         <outlet property="j1b11" destination="XPW-F9-Nl3" id="xwQ-az-Z0m"/>
@@ -1140,11 +1201,12 @@
                         <outlet property="j3textfield" destination="ycT-qj-mWf" id="w2C-4e-dLH"/>
                         <outlet property="labelNumRoundActuel" destination="BZq-9L-rll" id="dPc-EP-7J7"/>
                         <outlet property="round" destination="Oya-ve-rOK" id="N1y-df-dgk"/>
+                        <outlet property="typeDecision" destination="0zc-Mq-fCV" id="0ib-Lq-Zmt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="415"/>
+            <point key="canvasLocation" x="514" y="384"/>
         </scene>
     </scenes>
 </document>
