@@ -222,7 +222,7 @@ int pointsDeduitsBoxeurRouge;
     
     _pointsDeduitsBleu.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurBleu];
     
-    _pointsDeduitsRouge.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurBleu];
+    _pointsDeduitsRouge.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurRouge];
     
 }
 
@@ -230,9 +230,7 @@ int pointsDeduitsBoxeurRouge;
     
     //mise a jour de résultats
   
-     _pointsDeduitsBleu.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurBleu];
     
-      _pointsDeduitsRouge.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurBleu];
     
     if(([_JRJ1RA.text integerValue] < 10 && [_JBJ1RA.text integerValue] < 10)||([_JRJ2RA.text integerValue] < 10 && [_JBJ2RA.text integerValue] < 10)||([_JRJ3RA.text integerValue] < 10 && [_JBJ3RA.text integerValue] < 10))
     {
@@ -502,6 +500,9 @@ int pointsDeduitsBoxeurRouge;
     pointsDeduitsBoxeurRouge = 0;
     pointsDeduitsBoxeurBleu = 0;
     
+    _pointsDeduitsBleu.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurBleu];
+        
+    _pointsDeduitsRouge.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurRouge];
     
     
     // juge 1 et boxeur bleu
@@ -793,12 +794,16 @@ int pointsDeduitsBoxeurRouge;
 - (IBAction)fauteCommiseParBoxeurBleu:(UIButton *)sender {
     
     pointsDeduitsBoxeurBleu += 1;
+    _pointsDeduitsBleu.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurBleu];
+    
+   
     
 }
 
 - (IBAction)fauteCommiseParBoxeurRouge:(UIButton *)sender {
     
     pointsDeduitsBoxeurRouge += 1;
+     _pointsDeduitsRouge.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurRouge];
     
 }
 - (IBAction)koDuRouge:(UIButton *)sender {
@@ -938,13 +943,19 @@ int pointsDeduitsBoxeurRouge;
 - (IBAction)annulerFauteBleu:(UIButton *)sender {
     if (pointsDeduitsBoxeurBleu > 0) {
         pointsDeduitsBoxeurBleu -= 1 ;
+         _pointsDeduitsBleu.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurBleu];
+        
     }
+    
     
 }
 
 - (IBAction)annulerFauteRouge:(UIButton *)sender {
     if (pointsDeduitsBoxeurRouge > 0) {
           pointsDeduitsBoxeurRouge -= 1;
+       
+        
+        _pointsDeduitsRouge.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurRouge];
     }
  
     
