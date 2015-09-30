@@ -20,6 +20,14 @@
 - (IBAction)fauteCommiseParBoxeurBleu:(UIButton *)sender;
 
 - (IBAction)fauteCommiseParBoxeurRouge:(UIButton *)sender;
+// annuler faute
+
+
+- (IBAction)annulerFauteBleu:(UIButton *)sender;
+
+- (IBAction)annulerFauteRouge:(UIButton *)sender;
+
+
 
 
 @property (weak, nonatomic) IBOutlet UITextField *boxeurRouge;
@@ -268,6 +276,12 @@
 - (IBAction)AugmenterPonitsJ1BoxRouge:(UIButton *)sender;
 - (IBAction)AugmenterPonitsJ2BoxRouge:(UIButton *)sender;
 - (IBAction)AugmenterPonitsJ3BoxRouge:(UIButton *)sender;
+
+// label de points deduites par l'arbitre
+
+@property (weak, nonatomic) IBOutlet UILabel *pointsDeduitsBleu;
+
+@property (weak, nonatomic) IBOutlet UILabel *pointsDeduitsRouge;
 
 
 
