@@ -66,12 +66,12 @@ int pointsDeduitsBoxeurRouge;
     
 
 - (IBAction)nouveauMatch:(UIButton *)sender {
-    _j1textfield.text = @"entrez un nom";
-    _j2textfield.text = @"entrez un nom";
-    _j3textfield.text = @"entrez un nom";
+    _j1textfield.text = @"Juge 1";
+    _j2textfield.text = @"Juge 2";
+    _j3textfield.text = @"Juge 3";
     
-    _boxeurbleu.text = @"entrez un nom";
-    _boxeurRouge.text = @"entrez un nom";
+    _boxeurbleu.text = @"Boxeur Bleu";
+    _boxeurRouge.text = @"Boxeur Rouge";
 
     _typeDecision.text = @"";
     _gagnantMatch.text = @"";
