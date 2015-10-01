@@ -17,6 +17,45 @@
 - (IBAction)continuer:(UIButton *)sender;
 //faute
 
+@property (weak, nonatomic) IBOutlet UIButton *commencerState;
+
+@property (weak, nonatomic) IBOutlet UIButton *roundSuivantState;
+
+@property (weak, nonatomic) IBOutlet UIButton *dqbleustate;
+@property (weak, nonatomic) IBOutlet UIButton *kobleustate;
+@property (weak, nonatomic) IBOutlet UIButton *fautemoisbleu;
+@property (weak, nonatomic) IBOutlet UIButton *fautebleuplus;
+
+@property (weak, nonatomic) IBOutlet UIButton *korougestate;
+
+@property (weak, nonatomic) IBOutlet UIButton *dqrougestate;
+
+@property (weak, nonatomic) IBOutlet UIButton *fautemoisrougestate;
+
+@property (weak, nonatomic) IBOutlet UIButton *fauteplusrougestate;
+
+@property (weak, nonatomic) IBOutlet UIButton *pointsMoinsJuge1Bleu;
+@property (weak, nonatomic) IBOutlet UIButton *pointsPlusJuge1Bleu;
+
+@property (weak, nonatomic) IBOutlet UIButton *pointsMoisJuge2Bleu;
+@property (weak, nonatomic) IBOutlet UIButton *pointsPlusJuge2Bleu;
+
+@property (weak, nonatomic) IBOutlet UIButton *pointsMoinsJuge3Bleu;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *pointsPlusJuge3Bleu;
+
+@property (weak, nonatomic) IBOutlet UIButton *pointsPlusJuge1Rouge;
+
+@property (weak, nonatomic) IBOutlet UIButton *pointsPlusJuge2Rouge;
+
+@property (weak, nonatomic) IBOutlet UIButton *pointsPlusJuge3Rouge;
+
+@property (weak, nonatomic) IBOutlet UIButton *pointsMoinsJuge1Rouge;
+@property (weak, nonatomic) IBOutlet UIButton *pointsMoinsJuge2Rouge;
+@property (weak, nonatomic) IBOutlet UIButton *pointsMoinsJuge3Rouge;
+
+
 - (IBAction)fauteCommiseParBoxeurBleu:(UIButton *)sender;
 
 - (IBAction)fauteCommiseParBoxeurRouge:(UIButton *)sender;
@@ -27,7 +66,9 @@
 
 - (IBAction)annulerFauteRouge:(UIButton *)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *boxeurBleuLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *boxeurRougeLabel;
 
 
 @property (weak, nonatomic) IBOutlet UITextField *boxeurRouge;
@@ -282,6 +323,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *pointsDeduitsBleu;
 
 @property (weak, nonatomic) IBOutlet UILabel *pointsDeduitsRouge;
+
+
+- (IBAction)juge1TextField:(UITextField *)sender;
+
+
+- (IBAction)juge2TextFiled:(UITextField *)sender;
+- (IBAction)juge3TextField:(UITextField *)sender;
+
+- (IBAction)boxeurBleuTextField:(UITextField *)sender;
+
+- (IBAction)boxeurRougeTextField:(UITextField *)sender;
 
 
 

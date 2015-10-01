@@ -66,12 +66,51 @@ int pointsDeduitsBoxeurRouge;
     
 
 - (IBAction)nouveauMatch:(UIButton *)sender {
-    _j1textfield.text = @"Juge 1";
-    _j2textfield.text = @"Juge 2";
-    _j3textfield.text = @"Juge 3";
+    _commencerState.enabled = true;
+    _roundSuivantState.enabled = false;
     
-    _boxeurbleu.text = @"Boxeur Bleu";
-    _boxeurRouge.text = @"Boxeur Rouge";
+    self.dqbleustate.enabled = false;
+    self.kobleustate.enabled = false;
+    self.fautemoisbleu.enabled = false;
+    self.fautebleuplus.enabled = false;
+    
+    self.korougestate.enabled = false;
+    self.dqrougestate.enabled = false;
+    self.fautemoisrougestate.enabled = false;
+    self.fauteplusrougestate.enabled = false;
+    
+    
+     self.pointsMoinsJuge1Bleu.enabled = false;
+    self.pointsMoisJuge2Bleu.enabled = false;
+    self.pointsMoinsJuge3Bleu.enabled = false;
+    self.pointsPlusJuge1Bleu.enabled = false;
+    self.pointsPlusJuge2Bleu.enabled = false;
+    self.pointsPlusJuge3Bleu.enabled = false;
+    
+    self.pointsMoinsJuge1Rouge.enabled = false;
+    self.pointsMoinsJuge2Rouge.enabled = false;
+    self.pointsMoinsJuge3Rouge.enabled = false;
+    self.pointsPlusJuge1Rouge.enabled = false;
+    self.pointsPlusJuge2Rouge.enabled = false;
+    self.pointsPlusJuge3Rouge.enabled = false;
+    
+    
+    
+    
+    
+    _j1textfield.text = @".....";
+    _j2textfield.text = @".....";
+    _j3textfield.text = @".....";
+    
+    _boxeurbleu.text = @".....";
+    _boxeurRouge.text = @".....";
+    
+    _J1RA.text = @"";
+    _J2RA.text = @"";
+    _J3RA.text = @"";
+    
+    _boxeurRougeLabel.text = @"";
+     _boxeurBleuLabel.text = @"";
 
     _typeDecision.text = @"";
     _gagnantMatch.text = @"";
@@ -176,7 +215,7 @@ int pointsDeduitsBoxeurRouge;
     pointsDeduitsBoxeurBleu = 0;
     
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Nouvelle Partie de boxe"
-                                                   message:[[NSString alloc]initWithFormat:@"Saisissez les noms des juges sur les colonnes de points, et les noms des boxeur dans les champs sous les coins bleu et rouge \n%@", @" ;"]
+                                                   message:[[NSString alloc]initWithFormat:@"Saisissez les noms des juges  et les noms des boxeur. Sinon, les noms par défauts seront attribués aux juges et aux boxeurs. En tout moment, vous pouvez les changer. Ensuite, cliquez sur commencer pour  commencer le premier ronde \n%@", @""]
                                                   delegate:nil
                                          cancelButtonTitle:@"Fermer"
                                          otherButtonTitles:nil];
@@ -186,13 +225,49 @@ int pointsDeduitsBoxeurRouge;
 
 
 - (IBAction)Commencer:(UIButton *)sender {
+    
+    self.dqbleustate.enabled = true;
+    self.kobleustate.enabled = true;
+    self.fautemoisbleu.enabled = true;
+    self.fautebleuplus.enabled = true;
+    
+    self.korougestate.enabled = true;
+    self.dqrougestate.enabled = true;
+    self.fautemoisrougestate.enabled = true;
+    self.fauteplusrougestate.enabled = true;
+    
+    
+    self.pointsMoinsJuge1Bleu.enabled = true;
+    self.pointsMoisJuge2Bleu.enabled = true;
+    self.pointsMoinsJuge3Bleu.enabled = true;
+    self.pointsPlusJuge1Bleu.enabled = true;
+    self.pointsPlusJuge2Bleu.enabled = true;
+    self.pointsPlusJuge3Bleu.enabled = true;
+    
+    self.pointsMoinsJuge1Rouge.enabled = true;
+    self.pointsMoinsJuge2Rouge.enabled = true;
+    self.pointsMoinsJuge3Rouge.enabled = true;
+    self.pointsPlusJuge1Rouge.enabled = true;
+    self.pointsPlusJuge2Rouge.enabled = true;
+    self.pointsPlusJuge3Rouge.enabled = true;
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
    
     numRound = 1;
-    
+  /*
     _j1label.text   =_j1textfield.text ;
     _j2label.text   =_j2textfield.text ;
     _j3label.text   =_j3textfield.text ;
-    
+    */
   
     
     _labelNumRoundActuel.text = [NSString stringWithFormat:@"%d" , numRound];
@@ -212,17 +287,36 @@ int pointsDeduitsBoxeurRouge;
     _JRJ2RA.text = @"10";
     _JRJ3RA.text = @"10";
     
-    _J1RA.text = _j1textfield.text;
+  /*  _J1RA.text = _j1textfield.text;
      _J2RA.text = _j2textfield.text;
     
      _J3RA.text = _j3textfield.text;
-    
+    */
     pointsDeduitsBoxeurRouge = 0;
     pointsDeduitsBoxeurBleu = 0;
     
     _pointsDeduitsBleu.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurBleu];
     
     _pointsDeduitsRouge.text = [NSString stringWithFormat:@"%d" , pointsDeduitsBoxeurRouge];
+    
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Nouvelle Partie de boxe"
+                                                   message:[[NSString alloc]initWithFormat:@"Le premier ronde est lancé.  \n%@", @""]
+                                                  delegate:nil
+                                         cancelButtonTitle:@"Fermer"
+                                         otherButtonTitles:nil];
+    [alert show];
+    
+    
+    
+    
+    
+    
+    
+     _commencerState.enabled = false;
+     _roundSuivantState.enabled = true;
+    
+    
     
 }
 
@@ -740,7 +834,7 @@ int pointsDeduitsBoxeurRouge;
     {
         
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Fin Partie de boxe"
-                                                       message:[[NSString alloc]initWithFormat:@"SVoir le résultat et le type de décision  \n%@", @" ;"]
+                                                       message:[[NSString alloc]initWithFormat:@"Voir le résultat et le type de décision  \n%@", @" ;"]
                                                       delegate:nil
                                              cancelButtonTitle:@"Fermer"
                                              otherButtonTitles:nil];
@@ -749,11 +843,30 @@ int pointsDeduitsBoxeurRouge;
         
         
         
+        _roundSuivantState.enabled = false;
+        self.dqbleustate.enabled = false;
+        self.kobleustate.enabled = false;
+        self.fautemoisbleu.enabled = false;
+        self.fautebleuplus.enabled = false;
         
+        self.korougestate.enabled = false;
+        self.dqrougestate.enabled = false;
+        self.fautemoisrougestate.enabled = false;
+        self.fauteplusrougestate.enabled = false;
         
+        self.pointsMoinsJuge1Bleu.enabled = false;
+        self.pointsMoisJuge2Bleu.enabled = false;
+        self.pointsMoinsJuge3Bleu.enabled = false;
+        self.pointsPlusJuge1Bleu.enabled = false;
+        self.pointsPlusJuge2Bleu.enabled = false;
+        self.pointsPlusJuge3Bleu.enabled = false;
         
-        
-        
+        self.pointsMoinsJuge1Rouge.enabled = false;
+        self.pointsMoinsJuge2Rouge.enabled = false;
+        self.pointsMoinsJuge3Rouge.enabled = false;
+        self.pointsPlusJuge1Rouge.enabled = false;
+        self.pointsPlusJuge2Rouge.enabled = false;
+        self.pointsPlusJuge3Rouge.enabled = false;
         
         
         if ([j1rcumulv integerValue]+ [j2rcumulv integerValue] + [j3rcumulv integerValue] < [j1bcumulv integerValue]+ [j2bcumulv integerValue] + [j3bcumulv integerValue])
@@ -816,8 +929,30 @@ int pointsDeduitsBoxeurRouge;
     _gagnantMatch.text = @"Boxeur Bleu";
     _typeDecision.text = @"K.O";
     
+     _roundSuivantState.enabled = false;
+    self.dqbleustate.enabled = false;
+    self.kobleustate.enabled = false;
+    self.fautemoisbleu.enabled = false;
+    self.fautebleuplus.enabled = false;
     
+    self.korougestate.enabled = false;
+    self.dqrougestate.enabled = false;
+    self.fautemoisrougestate.enabled = false;
+    self.fauteplusrougestate.enabled = false;
     
+    self.pointsMoinsJuge1Bleu.enabled = false;
+    self.pointsMoisJuge2Bleu.enabled = false;
+    self.pointsMoinsJuge3Bleu.enabled = false;
+    self.pointsPlusJuge1Bleu.enabled = false;
+    self.pointsPlusJuge2Bleu.enabled = false;
+    self.pointsPlusJuge3Bleu.enabled = false;
+    
+    self.pointsMoinsJuge1Rouge.enabled = false;
+    self.pointsMoinsJuge2Rouge.enabled = false;
+    self.pointsMoinsJuge3Rouge.enabled = false;
+    self.pointsPlusJuge1Rouge.enabled = false;
+    self.pointsPlusJuge2Rouge.enabled = false;
+    self.pointsPlusJuge3Rouge.enabled = false;
 }
 
 - (IBAction)koDuBleu:(UIButton *)sender {
@@ -829,8 +964,30 @@ int pointsDeduitsBoxeurRouge;
     [alert show];
     _gagnantMatch.text = @"Boxeur Rouge";
     _typeDecision.text = @"K.O";
+     _roundSuivantState.enabled = false;
+    self.dqbleustate.enabled = false;
+    self.kobleustate.enabled = false;
+    self.fautemoisbleu.enabled = false;
+    self.fautebleuplus.enabled = false;
     
+    self.korougestate.enabled = false;
+    self.dqrougestate.enabled = false;
+    self.fautemoisrougestate.enabled = false;
+    self.fauteplusrougestate.enabled = false;
     
+    self.pointsMoinsJuge1Bleu.enabled = false;
+    self.pointsMoisJuge2Bleu.enabled = false;
+    self.pointsMoinsJuge3Bleu.enabled = false;
+    self.pointsPlusJuge1Bleu.enabled = false;
+    self.pointsPlusJuge2Bleu.enabled = false;
+    self.pointsPlusJuge3Bleu.enabled = false;
+    
+    self.pointsMoinsJuge1Rouge.enabled = false;
+    self.pointsMoinsJuge2Rouge.enabled = false;
+    self.pointsMoinsJuge3Rouge.enabled = false;
+    self.pointsPlusJuge1Rouge.enabled = false;
+    self.pointsPlusJuge2Rouge.enabled = false;
+    self.pointsPlusJuge3Rouge.enabled = false;
 }
 
 - (IBAction)dqDuBleu:(UIButton *)sender {
@@ -842,8 +999,31 @@ int pointsDeduitsBoxeurRouge;
     [alert show];
     _gagnantMatch.text = @"Boxeur Rouge";
     _typeDecision.text = @"Disqualification";
+     _roundSuivantState.enabled = false;
+    self.dqbleustate.enabled = false;
+    self.kobleustate.enabled = false;
+    self.fautemoisbleu.enabled = false;
+    self.fautebleuplus.enabled = false;
+    
+    self.korougestate.enabled = false;
+    self.dqrougestate.enabled = false;
+    self.fautemoisrougestate.enabled = false;
+    self.fauteplusrougestate.enabled = false;
     
     
+    self.pointsMoinsJuge1Bleu.enabled = false;
+    self.pointsMoisJuge2Bleu.enabled = false;
+    self.pointsMoinsJuge3Bleu.enabled = false;
+    self.pointsPlusJuge1Bleu.enabled = false;
+    self.pointsPlusJuge2Bleu.enabled = false;
+    self.pointsPlusJuge3Bleu.enabled = false;
+    
+    self.pointsMoinsJuge1Rouge.enabled = false;
+    self.pointsMoinsJuge2Rouge.enabled = false;
+    self.pointsMoinsJuge3Rouge.enabled = false;
+    self.pointsPlusJuge1Rouge.enabled = false;
+    self.pointsPlusJuge2Rouge.enabled = false;
+    self.pointsPlusJuge3Rouge.enabled = false;
 }
 
 - (IBAction)dqDuRouge:(UIButton *)sender {
@@ -856,8 +1036,30 @@ int pointsDeduitsBoxeurRouge;
     _gagnantMatch.text = @"Boxeur Bleu";
     _typeDecision.text = @"Disqualification";
     
+     _roundSuivantState.enabled = false;
+    self.dqbleustate.enabled = false;
+    self.kobleustate.enabled = false;
+    self.fautemoisbleu.enabled = false;
+    self.fautebleuplus.enabled = false;
     
+    self.korougestate.enabled = false;
+    self.dqrougestate.enabled = false;
     
+    self.fautemoisrougestate.enabled = false;
+    self.fauteplusrougestate.enabled = false;
+    self.pointsMoinsJuge1Bleu.enabled = false;
+    self.pointsMoisJuge2Bleu.enabled = false;
+    self.pointsMoinsJuge3Bleu.enabled = false;
+    self.pointsPlusJuge1Bleu.enabled = false;
+    self.pointsPlusJuge2Bleu.enabled = false;
+    self.pointsPlusJuge3Bleu.enabled = false;
+    
+    self.pointsMoinsJuge1Rouge.enabled = false;
+    self.pointsMoinsJuge2Rouge.enabled = false;
+    self.pointsMoinsJuge3Rouge.enabled = false;
+    self.pointsPlusJuge1Rouge.enabled = false;
+    self.pointsPlusJuge2Rouge.enabled = false;
+    self.pointsPlusJuge3Rouge.enabled = false;
     
 }
 
@@ -961,4 +1163,37 @@ int pointsDeduitsBoxeurRouge;
     
     
 }
+- (IBAction)juge1TextField:(UITextField *)sender {
+    
+    _J1RA.text   =_j1textfield.text ;
+}
+
+- (IBAction)juge2TextFiled:(UITextField *)sender {
+    _J2RA.text   =_j2textfield.text ;
+}
+
+- (IBAction)juge3TextField:(UITextField *)sender {
+    _J3RA.text   =_j3textfield.text ;
+}
+
+- (IBAction)boxeurBleuTextField:(UITextField *)sender {
+    
+       _boxeurBleuLabel.text = _boxeurbleu.text;
+    
+    
+}
+
+- (IBAction)boxeurRougeTextField:(UITextField *)sender {
+    
+    
+    _boxeurRougeLabel.text = _boxeurRouge.text;
+    
+}
+
+
+
+
+
+
+
 @end
